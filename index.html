@@ -48,6 +48,23 @@
 google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
 google.charts.setOnLoadCallback(drawChart);
 </script>
+<script type=”text/javascript”>
+Function drawChart() {
+var data = google.visualization.arrayToDataTable([
+[‘Black hole’, ‘Mass(solar masses)’],
+[‘Sagittarius A’, 4.3*10^7],
+[‘Ton 618’, >60*10^9],
+[‘M87's’, 5.4*10^9],
+[‘’, ],
+[‘’, ]
+]);
+var options = {
+title: ‘Size of supermassive black holes’
+};
+var chart = new google.visualization.PieChart(document.getElementByID(‘chart_div’));
+chart.draw(data, options);}
+</script>
+
   <body style="background-color:#FFFFFF;margin-left:50px;">
  
   <!table of contents>
