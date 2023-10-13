@@ -47,35 +47,35 @@
  <div id="chart_div" style="width: 600px; height: 400px;"></div>
 
      <script>
-   //Load the corechart package and seta callback function    
-   google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
-   google.charts.setOnLoadCallback(drawChart);
+        //Load the corechart package and seta callback function    
+        google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
+        google.charts.setOnLoadCallback(drawChart);
 
-   // Callback function to draw the vertical bar chart
-    function drawChart() {
-        // Create a Datatable with columns for black hole and the solar mass
-    var data = new google.visualization.arrayDataTable([
-       data.addColumn('string', 'Black Hole');
-       data.addColumn('number', 'Solar Mass');
+       // Callback function to draw the vertical bar chart
+       function drawChart() {
+          // Create a Datatable with columns for black hole and the solar mass
+         var data = new google.visualization.arrayDataTable([
+         data.addColumn('string', 'Black Hole');
+         data.addColumn('number', 'Solar Mass');
 
-        // add data for each Black hole
-        data.addRows([
-        [‘Black Hole’, ‘Solar Mass’],
-        [‘Sagittarius A’, 4300000],
-        [‘Ton 618’, 60000000000],
-        [‘M87's’, 5400000000]   
-]);
+         // add data for each Black hole
+         data.addRows([
+             [‘Black Hole’, ‘Solar Mass’],
+             [‘Sagittarius A’, 4300000],
+             [‘Ton 618’, 60000000000],
+             [‘M87's’, 5400000000]   
+         ]);
 
-        var options = {
-            title: 'Black Hole masses (Bar Chart)',
-            hAxis: { title: 'Solar Mass' }, // X-axis label
-            vAxis {title: 'Black Hole' }, // Y-axis label
-            bars: 'vertical', // Display bars vertically
-            legend: 'none' // Hide legend
-    };
+         var options = 
+             title: 'Black Hole masses (Bar Chart)',
+             hAxis: { title: 'Solar Mass' }, // X-axis label
+             vAxis {title: 'Black Hole' }, // Y-axis label
+             bars: 'vertical', // Display bars vertically
+             legend: 'none' // Hide legend
+           
       var chart = new google.visualization.PieChart(document.getElementByID(‘chart_div’));
       chart.draw(data, options);
-         }
+       }   
    </script>
 </body>
           
