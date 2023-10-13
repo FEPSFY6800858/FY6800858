@@ -47,13 +47,13 @@
  <div id="chart_div" style="width: 600px; height: 400px;"></div>
 
      <script>
-       <script type="text/javascript">
+   //Load the corechart package and seta callback function    
    google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
    google.charts.setOnLoadCallback(drawChart);
 
    // Callback function to draw the pie chart
     function drawChart() {
-    var data = google.visualization.arrayToDataTable([
+    var data = new google.visualization.arrayToDataTable([
         [‘Black hole’, ‘Mass(solar masses)’],
         [‘Sagittarius A’, 4.3*10^7],
         [‘Ton 618’, >60*10^9],
@@ -69,12 +69,9 @@ var chart = new google.visualization.PieChart(document.getElementByID(‘chart_d
 chart.draw(data, options);
     }  
   </style>
-
-<script type=”text/javascript”>
-   
-  
-  </script>
+ </script>
 </body>
+          
   <body style="background-color:#FFFFFF;margin-left:50px;">
  
   <!table of contents>
