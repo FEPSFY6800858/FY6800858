@@ -45,22 +45,15 @@
  <body>
  <!-- Create a div element to hold the chart -->
  <div id="chart_div" style="width: 600px; height: 400px;"></div>
-          
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <style>
-  .mySlides {display:none;}
-  </style>
-<script type="text/javascript">
+
+     <script>
+       <script type="text/javascript">
    google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
    google.charts.setOnLoadCallback(drawChart);
-</script>
 
-
-
-<script type=”text/javascript”>
+   // Callback function to draw the pie chart
     Function drawChart() {
-   var data = google.visualization.arrayToDataTable([
+    var data = google.visualization.arrayToDataTable([
         [‘Black hole’, ‘Mass(solar masses)’],
         [‘Sagittarius A’, 4.3*10^7],
         [‘Ton 618’, >60*10^9],
@@ -69,13 +62,17 @@
         [‘’, ]
 ]);
     
-var options = {
-               title: ‘Size of supermassive black holes’
-};
+var options = 'title: ‘Size of supermassive black holes’
+    ;
     
 var chart = new google.visualization.PieChart(document.getElementByID(‘chart_div’));
 chart.draw(data, options);
-}
+    }  
+  </style>
+
+<script type=”text/javascript”>
+   
+  
   </script>
 </body>
   <body style="background-color:#FFFFFF;margin-left:50px;">
