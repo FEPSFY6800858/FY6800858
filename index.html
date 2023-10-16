@@ -58,7 +58,7 @@
          data.addColumn('string', 'Black Hole');
          data.addColumn('number', 'Solar Mass');
 
-         // add data for each Black hole
+         // Add data for each Black hole
          data.addRows([
              [‘Black Hole’, ‘Solar Mass’],
              [‘Sagittarius A’, 4300000],
@@ -66,13 +66,13 @@
              [‘M87's’, 5400000000]   
          ]);
 
-         var options = 
-             title: 'Black Hole masses (Bar Chart)',
+         var options = (
+             title: 'Black Hole mass (Bar Chart)',
              hAxis: { title: 'Solar Mass' }, // X-axis label
              vAxis {title: 'Black Hole' }, // Y-axis label
              bars: 'vertical', // Display bars vertically
              legend: 'none' // Hide legend
-           
+           )
       var chart = new google.visualization.PieChart(document.getElementByID(‘chart_div’));
       chart.draw(data, options);
        }   
