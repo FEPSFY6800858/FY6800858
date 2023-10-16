@@ -38,6 +38,7 @@
   }
   </style>
       </head> 
+ <html>
  <head> 
  <!-- Include Google Charts API -->
      <script> type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
@@ -73,12 +74,13 @@
              bars: 'vertical', // Display bars vertically
              legend: 'none' // Hide legend
            )
-      var chart = new google.visualization.PieChart(document.getElementByID(‘chart_div’));
+      var chart = new google.visualization.LineChart(document.getElementByID('chart_div'));
       chart.draw(data, options);
        }   
    </script>
 </body>
-          
+</html>
+
   <body style="background-color:#FFFFFF;margin-left:50px;">
  
   <!table of contents>
