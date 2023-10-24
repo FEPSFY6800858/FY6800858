@@ -39,11 +39,11 @@
   </style>
       </head> 
  <html>
- <head> 
+
      <title>Black Hole Mass</title>
        <!-- Include Google Charts API -->
        <script> type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
- </head>
+ 
  <body>
  <!-- Create a div element to hold the chart -->
  <div id="chart_div" style="width: 600px; height: 400px;"></div>
@@ -56,10 +56,10 @@
        // Callback function to draw the column chart
        function drawChart() {
           // Create a Datatable with columns for black hole and the solar mass
-         var data = new google.visualization.DataTable([
-         data.addColumn('string', 'Black Hole');
+         var data = new google.visualization.DataTable{
+         data.addColumn('name', 'Black Hole');
          data.addColumn('number', 'Solar Mass');
-
+         }
          // Add data for each Black hole
          data.addRows([
              [‘Sagittarius A’, 4300000],
