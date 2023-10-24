@@ -67,21 +67,20 @@
              [‘M87's’, 5400000000]   
          ]);
          // Set chart options and formatting
-         var options = {
+         var options = (
              title: 'Black Hole mass (Bar Chart)',
              hAxis: { title: 'Solar Mass' }, // X-axis label
              vAxis {title: 'Black Hole' }, // Y-axis label
              colors: ['#3366cc'],// Column Color
-             legend: 'none', // Hide legend
-             animation:{
+             legend: 'none', // Hide legend 
+             animation:(
                  startup: true,
                  duration: 1000,
                  easing: 'out'
-               }
-            };
+           ) );
             var chart = new google.visualization.ColumnChart(document.getElementByID('chart_div'));
             chart.draw(data, options);
-        }   
+       }  
      </script>
  </body>
 </html>
