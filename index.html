@@ -152,6 +152,78 @@ plausible explanation.
 'The James Webb telescope may be able to prove the existence of these giant quasi-stars as it looks back in time to the early years of our universe.' <a href="#(NASA,2018)">(NASA, 2018)</a>.  
      </pre>
 
+ <h2> Conference Presentation: Quasi stars-  A possible explanation for the unexplained supermassive black holes </h2>
+    <script>
+        // Array of slide image URLs
+        var slideImages = ["Slide1.jpg", "Slide2.jpg", "Slide3.jog", "Slide4.jpg", "Slide5.jpg"];
+        var currentSlide = 0;
+        function showSlide() {
+            document.getElementById('Slide').src = slideImages(currentSlide);
+        }
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slideImages.length;
+            showSlide();
+        }
+        function prevSlide(){
+            currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+        }
+
+    // Function to show a specific slide based on the buttom clicked
+    function showSlideNumber(slideNumber) {
+        currentSlide = slideNumber - 1;
+    }
+    // Call showSlide() to display the first slide
+        showSlide();
+    </script>
+    <div id="slide-container">
+        <img id="slide" src="Slide1.jpg" alt="Slide1" style="width:100%; max-width:800px;">
+    <!-- previous and Next buttons container -->
+    <div class="button-container">
+        <button class="button" onclick="prevSlide()">Previous</button>
+        <button class="button" onclick="nextSlide()">Next</div>button>
+    </div>
+
+    <div class="slide-number-container">
+        <button class="button" onclick="showSlideNumber(1)>1</button>
+        <button class="button" onclick="showSlideNumber(1)>2</button>
+        <button class="buttom" onclick="showSlideNumber(3)>3</button>
+        <button class="button" onclick="showSlideNumber(4)>4</button>
+        <button class="button" onclick="showSlideNumber(5)>5</button>
+    </div>
+
+<style>
+    #slide-container {
+            text-align: conter;
+            position: relative;
+    }
+    .button-container {
+        position: absolute
+            bottom: 0:
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: -100px;
+    }
+
+    .button {
+        padding: 10px 20px
+        background-color: #4CAF50;
+        color: white;
+        border none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+     .slide-number-container {
+         position: absolute;
+         bottom: 0;
+         left: 50%
+         transform: translate(-50%);
+         margin-bottom: -50px;
+     }
+</style>
+           
+            
     <h3 id="References">References</h3>
     <p>
     <pre>       
