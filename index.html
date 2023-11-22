@@ -178,7 +178,7 @@ Available at: <p><a href="https://iopscience.iop.org/article/10.1086/588209/meta
         var slideImages = ["Slide1.JPG", "Slide2.JPG", "Slide3.JPG", "Slide4.JPG", "Slide5.JPG"];
         var currentSlide = 0;
         function showSlide() {
-            document.getElementById('Slide').src = slideImages(currentSlide);
+            document.getElementById('Slide').src = slideImages[currentSlide];
         }
         function nextSlide() {
             currentSlide = (currentSlide + 1) % slideImages.length;
@@ -186,7 +186,7 @@ Available at: <p><a href="https://iopscience.iop.org/article/10.1086/588209/meta
         }
         function prevSlide() {
             currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
-            showslide();
+            showSlide();
         }
 
     function showSlideNumber(slideNumber) {
