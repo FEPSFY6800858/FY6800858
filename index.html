@@ -184,7 +184,7 @@ Available at: <p><a href="https://iopscience.iop.org/article/10.1086/588209/meta
             currentSlide = (currentSlide + 1) % slideImages.length;
             showSlide();
         }
-        function prevSlide(){
+        function prevSlide() {
             currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
         }
 
@@ -195,7 +195,7 @@ Available at: <p><a href="https://iopscience.iop.org/article/10.1086/588209/meta
      showSlide();
 </script>
   
-    <div id="slide-container">
+    <div id="Slide-container">
         <img id="Slide" src="Slide1.JPG" alt="Slide1" style="width:100%; max-width:800px;">
    
     <div class="button-container">
@@ -203,7 +203,7 @@ Available at: <p><a href="https://iopscience.iop.org/article/10.1086/588209/meta
         <button class="button" onclick="nextSlide()">Next</button>
     </div>
 
-    <div class="slide-number-container">
+    <div class="Slide-number-container">
       <button class="button" onclick="showSlideNumber(1)">1</button>
       <button class="button" onclick="showSlideNumber(2)">2</button>
       <button class="buttom" onclick="showSlideNumber(3")>3</button>
@@ -213,7 +213,7 @@ Available at: <p><a href="https://iopscience.iop.org/article/10.1086/588209/meta
 
 <style>
     
-#slide-container {
+#Slide-container {
     text-align: center;
     position: relative;
 }
@@ -227,7 +227,7 @@ Available at: <p><a href="https://iopscience.iop.org/article/10.1086/588209/meta
 
  .button {
     padding: 10px 20px
-    background-color: #4C;
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
@@ -235,7 +235,7 @@ Available at: <p><a href="https://iopscience.iop.org/article/10.1086/588209/meta
     cursor: pointer;
     margin: 0 5px;
 }
- .slide-number-container {
+ .Slide-number-container {
      position: absolute;
      bottom: 0;
      left: 50%
